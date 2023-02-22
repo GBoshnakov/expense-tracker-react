@@ -1,5 +1,5 @@
 function Expenses () {
-    return <h2>expense here</h2>
+    return <h2>test</h2>
 }
 
 export default Expenses;
