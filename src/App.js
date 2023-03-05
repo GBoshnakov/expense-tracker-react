@@ -1,6 +1,5 @@
-// import logo from './logo.svg';
 import './App.css';
-import Expenses from './Components/ExpensesItem';
+import Expenses from './Components/Expenses';
 
 function App() {
 
@@ -27,32 +26,7 @@ function App() {
   ];
 
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-    <div>
-      <h1>Hello</h1>
-      
-
-
-      <Expenses title={expenses[0].title} date={expenses[0].date} amount={expenses[0].amount}></Expenses>
-      <Expenses title={expenses[1].title} date={expenses[1].date} amount={expenses[1].amount}></Expenses>
-      <Expenses title={expenses[2].title} date={expenses[2].date} amount={expenses[2].amount}></Expenses>
-      <Expenses title={expenses[3].title} date={expenses[3].date} amount={expenses[3].amount}></Expenses>
-    </div>
+    <Expenses data={expenses}></Expenses>
   );
 }
 
