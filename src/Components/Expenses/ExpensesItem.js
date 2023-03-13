@@ -1,4 +1,4 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 
 import './ExpensesItem.css';
 import ExpenseDate from './ExpenseDate';
@@ -15,6 +15,7 @@ function ExpensesItem(props) {
 
 
     return (
+        <li>
         <Card className='expense-item'>
             <ExpenseDate date={props.date}/>
             <div className='expense-item__description'>
@@ -22,7 +23,8 @@ function ExpensesItem(props) {
                 <div className='expense-item__price'>${props.amount}</div>
                 {/* <button onClick={eventHandler}>Change title</button> */}
             </div>
-        </Card>)
+        </Card>
+        </li>)
 }
 
 export default ExpensesItem;
