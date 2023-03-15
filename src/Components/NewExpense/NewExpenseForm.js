@@ -7,9 +7,6 @@ function NewExpenseForm (props) {
     const [amount, setAmount] = React.useState('');
     const [date, setDate] = React.useState('');
 
-    // const [increment, setIncrement] = React.useState(1);
-
-
 
     function titleChangeHandler(event) {
         setTitle(event.target.value);
@@ -23,9 +20,6 @@ function NewExpenseForm (props) {
         setDate(event.target.value);
     }
 
-    // function incrementHandler(event) {
-    //     setIncrement((prev) => prev + 1)
-    // }
 
     function submitHandler(event) {
         event.preventDefault();
@@ -46,10 +40,6 @@ function NewExpenseForm (props) {
 
     return (
 
-        // <div>
-        //     <div>{increment}</div>
-        //     <button onClick={incrementHandler}>Increment</button>
-        // </div>
         <form onSubmit={submitHandler}>
             <div className="new-expense__control">
                 <div className="new-expense__control">
@@ -69,6 +59,7 @@ function NewExpenseForm (props) {
 
             </div>
             <div className="new-expense__actions">
+                <button type="button" onClick={props.onHideForm} >Cancel</button>
                 <button type='submit'>Add Expense</button>
             </div>
 
